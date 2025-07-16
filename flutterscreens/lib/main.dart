@@ -1,5 +1,3 @@
-import 'dart:ffi';
-
 import 'package:flutter/material.dart';
 import 'package:flutterscreens/widgets/navs.dart';
 import 'package:flutterscreens/widgets/buttons.dart';
@@ -22,18 +20,18 @@ class MainApp extends StatelessWidget {
         body: Center(
           child: Text('Hello Wrd!'),
         ),
-          bottomNavigationBar: SafeArea(
-          child: Column(
+          bottomNavigationBar:
+          Column(
             mainAxisSize: MainAxisSize.min,
             children: [
               CustomNavigationBar(
                 currentIndex: 0,
-             //   onTap: (_) {}, // oder einfach weglassen, wenn du es optional machst
+             //   onTap: (_) {}, 
               ),
            //   const CustomBottomAppBar(), // farbiger Streifen
             ],
           ),
-        ),
+        
       ),
     );
   }

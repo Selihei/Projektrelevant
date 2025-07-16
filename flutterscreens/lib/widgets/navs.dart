@@ -16,7 +16,7 @@ class CustomNavigationBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       // Höhe der Navigation Bar anpassen, z.B. 60
-      height: 70,
+      height: 90,
       decoration: BoxDecoration(
         gradient: LinearGradient(
           colors: [
