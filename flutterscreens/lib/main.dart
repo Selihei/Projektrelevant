@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutterscreens/widgets/navs.dart';
+import 'package:flutterscreens/widgets/buttons.dart';
 
 void main() {
   runApp(const MainApp());
