@@ -15,7 +15,7 @@ class CustomNavigationBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      // Höhe der Navigation Bar anpassen, z.B. 60
+      // Höhe der Navigation Bar anpassen 60
       height: 100,
       decoration: BoxDecoration(
         gradient: LinearGradient(
@@ -31,12 +31,12 @@ class CustomNavigationBar extends StatelessWidget {
         currentIndex: currentIndex,
  //       onTap: onTap,
        backgroundColor: Colors.transparent,  
-       // elevation: 0, // Optional: Schatten entfernen, damit es cleaner aussieht
+       // elevation: 0, 
        // selectedItemColor: Colors.white,
       //  unselectedItemColor: Colors.white70,
         items: [
           const BottomNavigationBarItem(
-            icon: Icon(AppIcons.lists),
+            icon: Icon(AppIcons.ownlists, color: AppColors.navColor ,),
             label: "Listen",
           ),
           BottomNavigationBarItem(
@@ -47,7 +47,7 @@ class CustomNavigationBar extends StatelessWidget {
             label: "",
           ),
           const BottomNavigationBarItem(
-            icon: Icon(AppIcons.profile),
+            icon: Icon(AppIcons.profile, color: AppColors.navColor,),
             label: "Profil",
           ),
         ],

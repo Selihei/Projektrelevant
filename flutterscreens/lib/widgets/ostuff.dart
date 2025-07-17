@@ -53,3 +53,52 @@ Widget SettingsButtonContainer() {
       child: SettingsButton(onPressed: () {})) 
   );
 }
+
+Widget LastChoiceContainer() {
+  return Container(
+    //padding: const EdgeInsets.only(right: 16), 
+   
+    height: 230,
+    width: 330,
+    color: AppColors.gameTheme,
+   // alignment: Alignment.centerRight,
+    child: Column(
+   //   mainAxisAlignment: MainAxisAlignment.center,
+      children: [
+Container(
+  padding: EdgeInsets.all(10),
+  child: Image.asset("assets/images/farcry5_616x353.jpg")
+),
+SizedBox(height: 8),
+Container(
+  width: double.infinity,
+  //alignment: Alignment.topLeft,
+  padding: EdgeInsets.only(left:12),
+  child: 
+  Text("Far Cry 5", style: TextStyle(
+    fontWeight: FontWeight.w500, 
+    fontSize: 12, color: Colors.white),),
+)
+      ],
+    ),
+    ); 
+}
+
+Widget PillLastContainer(String labelText) {
+  return Container(
+    height: 45,
+    width: 300,
+    padding: EdgeInsets.only(left: 10, right: 10),
+decoration: BoxDecoration(
+  color: AppColors.gameTheme,
+  borderRadius: BorderRadius.circular(16)
+),
+    child: Row(
+      children: [
+Text(labelText, style: TextStyle(color: Colors.white),),
+Spacer(),
+Icon(AppIcons.information, color: Colors.white,)
+      ],
+    )
+    );
+}

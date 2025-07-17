@@ -2,13 +2,17 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-//Normale Farben
+//Settings Farben
 static const Color settingsCon =  Color(0xFF2B7984);
 static const Color settingButback = Color(0xFFD9D9D9);
 static const Color settingsButIc = Colors.black;
 
-//static const Color background = 
+static const Color background = Color(0xFFEBEBEB);
 static const Color navColor = Colors.white; 
+
+//Theme Farben
+static const Color gameTheme = Color(0xFF003049);
+// static const Color mediaTheme = 
 
 static const Color topBarColor = Color(0xFF173C41);
 static const Color botBarColor = Color(0xFF173C41);
