@@ -1,6 +1,7 @@
 import 'package:flutterscreens/theme/app_colors.dart';
 import 'package:flutterscreens/theme/app_icons.dart';
 import 'package:flutter/material.dart';
+import 'package:flutterscreens/widgets/ostuff.dart';
 
 class CustomNavigationBar extends StatelessWidget {
   final int currentIndex;
@@ -55,3 +56,44 @@ class CustomNavigationBar extends StatelessWidget {
     );
   }
 }
+
+
+
+
+class TestnavigationBar extends StatelessWidget {
+  final int currentIndex;
+ // final Function(int) onTap;
+
+  const TestnavigationBar({
+    super.key,
+     this.currentIndex = 0,
+  //  required this.onTap,
+  });
+
+  @override
+  Widget build(BuildContext context) { 
+     return Scaffold(
+      bottomNavigationBar: NavigationBar(
+        onDestinationSelected: (int index) { },
+   //     indicatorColor: Colors.amber,
+     //   selectedIndex: currentPageIndex,
+        destinations:  <Widget>[
+          NavigationDestination(
+           // selectedIcon: Icon(Icons.home),
+            icon: navButtonContainer(AppIcons.ownlists, "Listen"),//Icon(Icons.home_outlined),
+            label: '',
+          ),
+          NavigationDestination(
+            icon: navButtonContainer(AppIcons.start, ""), //Badge(child: Icon(Icons.notifications_sharp)),
+            label: '',
+          ),
+          NavigationDestination(
+            icon: navButtonContainer(AppIcons.profile, "Profil"),//Badge(label: Text('2'), child: Icon(Icons.messenger_sharp)),
+            label: '',
+          ),
+        ]
+      )
+    );
+  }
+}
+

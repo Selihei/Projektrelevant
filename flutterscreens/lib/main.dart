@@ -55,17 +55,20 @@ PillLastContainer("WatchDogs")
           ],
           
         ),
-          bottomNavigationBar:
-          Column(
-            mainAxisSize: MainAxisSize.min,
-            children: [
-              CustomNavigationBar(
-                currentIndex: 0,
+        bottomNavigationBar: TestnavigationBar(),
+
+
+         // bottomNavigationBar:
+        //  Column(
+         //   mainAxisSize: MainAxisSize.min,
+          //  children: [
+            //  CustomNavigationBar(
+             //   currentIndex: 0,
              //   onTap: (_) {}, 
-              ),
+            //  ),
            //   const CustomBottomAppBar(), // farbiger Streifen
-            ],
-          ),
+           // ],
+         // ),
         
       ),
     );

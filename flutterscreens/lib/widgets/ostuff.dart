@@ -102,3 +102,43 @@ Icon(AppIcons.information, color: Colors.white,)
     )
     );
 }
+
+
+
+
+Widget navButtonContainer(IconData icon, String text) {
+  return Column(
+    mainAxisAlignment: MainAxisAlignment.center,
+    children: [
+  Container(
+    padding: const EdgeInsets.only(top: 16), 
+    width: double.infinity,
+  //  color: AppColors.settingsCon,
+ ///  alignment: Alignment.center,
+  decoration: BoxDecoration(
+    border: Border.all(
+      color: Colors.black,
+width: 0.5
+    ),
+    gradient: LinearGradient(
+          colors: [
+            AppColors.navbuttstart,
+            AppColors.navbuttend,
+          ],
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+    )
+  ),
+    child: Column(
+      mainAxisAlignment: MainAxisAlignment.center,
+      crossAxisAlignment: CrossAxisAlignment.center,
+      children: [
+Icon(icon, color: Colors.white,size: 36,),
+SizedBox(height:4),
+Text(text, style: TextStyle(color: Colors.white),)
+      ],
+    )
+  )
+        ],
+  );
+}
