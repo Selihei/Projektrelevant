@@ -38,7 +38,7 @@ class CustomNavigationBar extends StatelessWidget {
         items: [
           const BottomNavigationBarItem(
             icon: Icon(AppIcons.ownlists, color: AppColors.navColor ,),
-            label: "Listen",
+            label: "Listsdagsgden",
           ),
           BottomNavigationBarItem(
             icon: Container(
@@ -72,28 +72,43 @@ class TestnavigationBar extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) { 
-     return Scaffold(
-      bottomNavigationBar: NavigationBar(
-        onDestinationSelected: (int index) { },
-   //     indicatorColor: Colors.amber,
-     //   selectedIndex: currentPageIndex,
-        destinations:  <Widget>[
-          NavigationDestination(
-           // selectedIcon: Icon(Icons.home),
-            icon: navButtonContainer(AppIcons.ownlists, "Listen"),//Icon(Icons.home_outlined),
-            label: '',
-          ),
-          NavigationDestination(
-            icon: navButtonContainer(AppIcons.start, ""), //Badge(child: Icon(Icons.notifications_sharp)),
-            label: '',
-          ),
-          NavigationDestination(
-            icon: navButtonContainer(AppIcons.profile, "Profil"),//Badge(label: Text('2'), child: Icon(Icons.messenger_sharp)),
-            label: '',
-          ),
-        ]
-      )
-    );
+     return Container(
+      decoration: BoxDecoration(
+    gradient: LinearGradient(
+          colors: [
+            AppColors.navbuttstart,
+            AppColors.navbuttend,
+          ],
+          begin: Alignment.topCenter,
+          end: Alignment.bottomCenter,
+    )
+  ),
+       child: NavigationBar(
+      backgroundColor: Colors.transparent,
+      indicatorColor: Colors.transparent,
+  //    surfaceTintColor: Colors.transparent,
+     // overlayColor: Colors.transparent,
+          onDestinationSelected: (int index) { },
+         //      indicatorColor: Colors.amber,
+       //   selectedIndex: currentPageIndex,
+          destinations:  <Widget>[
+            NavigationDestination(
+             // selectedIcon: Icon(Icons.home),
+              icon: navButtonContainer(AppIcons.ownlists, "Listen"),//Icon(Icons.home_outlined),
+              label: '',
+            ),
+            NavigationDestination(
+              icon: navButtonContainer(AppIcons.start, "hi"), //Badge(child: Icon(Icons.notifications_sharp)),
+              label: '',
+            ),
+            NavigationDestination(
+              icon: navButtonContainer(AppIcons.profile, "Profil"),//Badge(label: Text('2'), child: Icon(Icons.messenger_sharp)),
+              label: '',
+            ),
+          ]
+        ),
+     )
+    ;
   }
 }
 

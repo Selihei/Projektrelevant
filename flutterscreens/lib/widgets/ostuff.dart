@@ -111,27 +111,21 @@ Widget navButtonContainer(IconData icon, String text) {
     mainAxisAlignment: MainAxisAlignment.center,
     children: [
   Container(
-    padding: const EdgeInsets.only(top: 16), 
-    width: double.infinity,
-  //  color: AppColors.settingsCon,
- ///  alignment: Alignment.center,
-  decoration: BoxDecoration(
+      decoration: BoxDecoration(
+      //  color: Colors.transparent,
     border: Border.all(
-      color: Colors.black,
-width: 0.5
+      color: AppColors.botBarColor,
+   width: 0.5
     ),
-    gradient: LinearGradient(
-          colors: [
-            AppColors.navbuttstart,
-            AppColors.navbuttend,
-          ],
-          begin: Alignment.topCenter,
-          end: Alignment.bottomCenter,
-    )
-  ),
+      ),
+    //padding: const EdgeInsets.only(top: 1), 
+   width: double.infinity,
+  //  color: AppColors.settingsCon,
+ //  alignment: Alignment.center,
+ 
     child: Column(
-      mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.center,
+    //  mainAxisAlignment: MainAxisAlignment.center,
+    //  crossAxisAlignment: CrossAxisAlignment.center,
       children: [
 Icon(icon, color: Colors.white,size: 36,),
 SizedBox(height:4),

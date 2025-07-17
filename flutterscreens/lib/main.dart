@@ -23,7 +23,9 @@ class MainApp extends StatelessWidget {
           mainAxisSize: MainAxisSize.max,
           children: [
             SettingsButtonContainer(),
-            SizedBox(width: double.infinity, height: 24),
+            SizedBox(
+            width: double.infinity,
+             height: 24),
              Container(
               alignment: Alignment.centerLeft,
                padding: const EdgeInsets.only(left: 40),
@@ -55,7 +57,7 @@ PillLastContainer("WatchDogs")
           ],
           
         ),
-        bottomNavigationBar: TestnavigationBar(),
+       bottomNavigationBar: TestnavigationBar(),
 
 
          // bottomNavigationBar:
