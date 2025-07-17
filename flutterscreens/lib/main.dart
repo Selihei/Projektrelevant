@@ -12,13 +12,17 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return  MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        appBar: const customAppBar(title: "",),
+        appBar: customAppBar(title: "",),
         
-        body: Center(
-          child: Text('Hello Wrd!'),
+        body: Column(
+          mainAxisSize: MainAxisSize.max,
+          children: [
+            SettingsButtonContainer(),
+          ],
+          //child: Text('Hello Wrd!'),
         ),
           bottomNavigationBar:
           Column(

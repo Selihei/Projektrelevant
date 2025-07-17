@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutterscreens/theme/app_colors.dart';
 import 'package:flutterscreens/theme/app_icons.dart';
+import 'package:flutterscreens/widgets/buttons.dart';
 
 class customAppBar extends StatelessWidget implements PreferredSizeWidget {
   final String title;
@@ -33,4 +34,15 @@ class CustomBottomAppBar extends StatelessWidget implements PreferredSizeWidget 
 
   @override
   Size get preferredSize => const Size.fromHeight(16.0);
+}
+
+Widget SettingsButtonContainer() {
+  return Container(
+    padding: const EdgeInsets.only(right: 16), 
+    width: double.infinity,
+    height: 50,
+    color: AppColors.settingsCon,
+    alignment: Alignment.centerRight,
+    child: SettingsButton(onPressed: () {}) 
+  );
 }

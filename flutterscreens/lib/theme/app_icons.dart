@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class AppIcons {
 //Settings Icon
-static const IconData settings = Icons.settings; 
+static const IconData settings = Icons.settings_outlined; 
 
 //NavigationBar Icons
 static const IconData start = Icons.play_arrow_outlined;
