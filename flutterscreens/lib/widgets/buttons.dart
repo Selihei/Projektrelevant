@@ -11,7 +11,6 @@ class SettingsButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return IconButton(
       icon: const Icon(AppIcons.settings, color: AppColors.settingsButIc,),
-      color: AppColors.settingButback,
       onPressed: () {},
     );
   }

@@ -43,6 +43,13 @@ Widget SettingsButtonContainer() {
     height: 50,
     color: AppColors.settingsCon,
     alignment: Alignment.centerRight,
-    child: SettingsButton(onPressed: () {}) 
+    child: Container(
+      width: 40,
+      height: 40,
+   decoration: BoxDecoration(
+    shape: BoxShape.circle,
+    color: AppColors.settingButback,
+   ),
+      child: SettingsButton(onPressed: () {})) 
   );
 }
