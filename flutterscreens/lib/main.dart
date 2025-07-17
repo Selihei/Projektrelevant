@@ -21,8 +21,21 @@ class MainApp extends StatelessWidget {
           mainAxisSize: MainAxisSize.max,
           children: [
             SettingsButtonContainer(),
+            SizedBox(width: double.infinity, height: 24),
+             Container(
+              alignment: Alignment.centerLeft,
+               padding: const EdgeInsets.only(left: 40),
+               child: const Text(
+                 'Deine letzte Auswahl:',
+                 style: TextStyle(
+                   fontWeight: FontWeight.w900,
+                   fontSize: 16,
+                 ),
+               ),
+             ),
+         //   Text("Deine letzte Auswahl", ),
           ],
-          //child: Text('Hello Wrd!'),
+          
         ),
           bottomNavigationBar:
           Column(
