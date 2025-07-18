@@ -111,15 +111,20 @@ Widget navButtonContainer(IconData icon, String text) {
     mainAxisAlignment: MainAxisAlignment.center,
     children: [
   Container(
-      decoration: BoxDecoration(
+      width: double.infinity,
+   // height: 63,
+  //    decoration: BoxDecoration(
       //  color: Colors.transparent,
-    border: Border.all(
-      color: AppColors.botBarColor,
-   width: 0.5
-    ),
-      ),
-    //padding: const EdgeInsets.only(top: 1), 
-   width: double.infinity,
+  //  border: Border(
+   //  right: BorderSide(color: AppColors.botBarColor, width:0),
+   ////   top: BorderSide(color: AppColors.botBarColor, width: 1),
+   //   bottom: BorderSide(color: Colors.black, width: 1),
+     // color: AppColors.botBarColor,
+ //  width: 1.0
+ //   ),
+  //    ),
+    //padding: const EdgeInsets.only(top: 16), 
+ 
   //  color: AppColors.settingsCon,
  //  alignment: Alignment.center,
  
@@ -128,7 +133,7 @@ Widget navButtonContainer(IconData icon, String text) {
     //  crossAxisAlignment: CrossAxisAlignment.center,
       children: [
 Icon(icon, color: Colors.white,size: 36,),
-SizedBox(height:4),
+//SizedBox(height:4),
 Text(text, style: TextStyle(color: Colors.white),)
       ],
     )

@@ -73,6 +73,7 @@ class TestnavigationBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) { 
      return Container(
+      height: 100,
       decoration: BoxDecoration(
     gradient: LinearGradient(
           colors: [
@@ -86,6 +87,7 @@ class TestnavigationBar extends StatelessWidget {
        child: NavigationBar(
       backgroundColor: Colors.transparent,
       indicatorColor: Colors.transparent,
+      labelBehavior: NavigationDestinationLabelBehavior.alwaysHide,
   //    surfaceTintColor: Colors.transparent,
      // overlayColor: Colors.transparent,
           onDestinationSelected: (int index) { },
@@ -94,15 +96,37 @@ class TestnavigationBar extends StatelessWidget {
           destinations:  <Widget>[
             NavigationDestination(
              // selectedIcon: Icon(Icons.home),
-              icon: navButtonContainer(AppIcons.ownlists, "Listen"),//Icon(Icons.home_outlined),
+              icon: Container(
+                decoration: BoxDecoration(
+                  border: Border(
+                    bottom: BorderSide(color: AppColors.botBarColor, width: 1),
+                    top: BorderSide(color: AppColors.botBarColor, width: 1),
+                    right: BorderSide(color: AppColors.botBarColor, width: 1) )
+                ),
+                child: navButtonContainer(AppIcons.ownlists, "Listen")),//Icon(Icons.home_outlined),
               label: '',
             ),
             NavigationDestination(
-              icon: navButtonContainer(AppIcons.start, "hi"), //Badge(child: Icon(Icons.notifications_sharp)),
+              icon: Container(
+                decoration: BoxDecoration(
+                  border: Border(
+                    bottom: BorderSide(color: AppColors.botBarColor, width: 1),
+                //    top: BorderSide(color: AppColors.botBarColor, width: 1),
+                    right: BorderSide(color: AppColors.botBarColor, width: 1) 
+                  )
+                ),
+                child: navButtonContainer(AppIcons.start, "")), //Badge(child: Icon(Icons.notifications_sharp)),
               label: '',
             ),
             NavigationDestination(
-              icon: navButtonContainer(AppIcons.profile, "Profil"),//Badge(label: Text('2'), child: Icon(Icons.messenger_sharp)),
+              icon: Container(
+                decoration: BoxDecoration(
+                  border: Border(
+                    bottom: BorderSide(color: AppColors.botBarColor, width: 1),
+                    top: BorderSide(color: AppColors.botBarColor, width: 1),
+                  )
+                ),
+                child: navButtonContainer(AppIcons.profile, "Profil")),//Badge(label: Text('2'), child: Icon(Icons.messenger_sharp)),
               label: '',
             ),
           ]
